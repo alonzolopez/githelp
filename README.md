@@ -7,13 +7,16 @@
 Changing a remote’s URL
 ## How to ignore files with .gitignore
 Atlassian tutorial on .gitignore
-## How to ignore files that are already being tracked (i.e. forgot to add them in the .gitignore and started tracking them)
-How to ignore files which are in repository?
-How to make Git "forget" about a file that was tracked but is now in .gitignore?
+## How to ignore files that are already being tracked 
+(i.e. forgot to add them in the .gitignore and started tracking them)
+
+[How to ignore files which are in repository?]()
+
+[How to make Git "forget" about a file that was tracked but is now in .gitignore?]()
 ## Create a new branch
 To create a new branch, first sync up to the master repo by running
 ```bash
-> git pull origin master
+git pull origin master
 ```
 Then create a new branch named, for example “control” branch, using the following:
 ```bash
@@ -26,14 +29,14 @@ git checkout control
 We can now test changes on our local control branch. These changes should not be pushed to the master repo until they are fully functioning and validated.
 
 ## Tracking a Remote branch
-How to track a remote branch
+[How to track a remote branch]()
 
 
 ## Delete a local branch
 git branch -d <branch>
 
 ## Delete a remote branch
-How can I delete a remote branch in Git?
+[How can I delete a remote branch in Git?]()
 git push origin --delete <branch>
 For example,
 git push origin --delete experiment-setup
@@ -113,4 +116,6 @@ Remove proxy
 How to Force Git Pull to Override Local Files
 Configure Git to use a proxy
 How to make a Readme
+
+$\lceil f \rceil$
 
