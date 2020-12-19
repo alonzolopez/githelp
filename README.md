@@ -85,6 +85,7 @@ git branch -a
 
 ## Push to remote
 [Docs](https://help.github.com/en/github/using-git/pushing-commits-to-a-remote-repository)
+
 To push to a remote branch from the branch you’re currently on (tutorial):
 ```bash
 git push origin <remote-branch>
@@ -144,7 +145,9 @@ Reverts mixdrink to the last committed version on local branch demo
 [Atlassian tutorial - git stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
 
 ## Install from Requirements files
-[Example requirements file](https://pip.pypa.io/en/stable/reference/pip_install/#example-requirements-file). Use the following to install:
+[Example requirements file](https://pip.pypa.io/en/stable/reference/pip_install/#example-requirements-file)
+
+Use the following to install:
 ```bash
 pip install -r requirements.txt
 ```
@@ -152,12 +155,15 @@ pip install -r requirements.txt
 ## Proxy
 
 [Set proxy](https://gist.github.com/evantoli/f8c23a37eb3558ab8765)
+
 [Remove proxy](https://stackoverflow.com/questions/32268986/git-how-to-remove-proxy)
 
 
 ## Miscellaneous
 [How to Force Git Pull to Override Local Files](https://www.w3docs.com/snippets/git/how-to-force-git-pull-to-override-local-files.html)
+
 [Configure Git to use a proxy](https://gist.github.com/evantoli/f8c23a37eb3558ab8765)
+
 [How to make a Readme](https://www.makeareadme.com/)
 
 
