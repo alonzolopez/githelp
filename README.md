@@ -1,10 +1,36 @@
 # Git Commands
 ## Add a remote
 [How to Add a New Remote to your Git Repo](https://articles.assembla.com/en/articles/1136998-how-to-add-a-new-remote-to-your-git-repo#:~:text=To%20add%20a%20new%20remote%2C%20use%20the%20git%20remote%20add,tab%20of%20your%20Git%20repo)
+```
+git remote add adder-ubuntu-20 ssh://alonzo@192.168.68.134/home/alonzo/catkin_ws/src/kinova-aero
+```
 
-
+## Delete a remote
+[How to remove a Git Remote](https://linuxize.com/post/how-to-remove-git-remotes/#:~:text=Use%20the%20git%20remote%20rm%20command%20to,a%20remote%20from%20a%20repository.)
+```
+git remote rm <remote-name>
+```
+See all your remotes with 
+```
+git remote -v
+```
 ## Change a remote’s url
-[Changing a remote’s URL](https://help.github.jp/enterprise/2.11/user/articles/changing-a-remote-s-url/)
+[Changing a remote’s URL](https://docs.github.com/en/github/using-git/changing-a-remotes-url)
+First, enter the directory hosting the git repo. Then, list the remotes. Finally, set the new remote url.
+```
+cd <directory-to-repo>
+git remote-v
+git remote set-url <remote-name> <url>
+```
+A sample might look like
+```
+git remote set-url adder-2 ssh://alonzo@192.168.68.134/home/alonzo/catkin_ws/src/kinova-aero
+```
+You can check verify that the input was correct with 
+```
+git remote -v
+```
+
 ## How to ignore files with .gitignore
 [Atlassian tutorial on .gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
 ## How to ignore files that are already being tracked 
