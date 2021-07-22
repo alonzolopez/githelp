@@ -1,4 +1,15 @@
-# Git Commands
+# Git and Proxy Helper Commands
+## Set wget proxy
+For all users of the system via the `/etc/wgetrc` or for the user only with the `~/.wgetrc` file:
+```
+use_proxy=yes
+http_proxy=http://<user>:<pw>@<ip>:<port>
+https_proxy=https://<user>:<pw>@<ip>:<port>
+```
+or via -e options placed after the URL:
+```
+wget ... -e use_proxy=yes -e http_proxy=http://<user>:<pw>@<ip>:<port> ...
+```
 ## Add a remote
 [How to Add a New Remote to your Git Repo](https://articles.assembla.com/en/articles/1136998-how-to-add-a-new-remote-to-your-git-repo#:~:text=To%20add%20a%20new%20remote%2C%20use%20the%20git%20remote%20add,tab%20of%20your%20Git%20repo)
 ```
