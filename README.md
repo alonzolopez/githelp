@@ -44,12 +44,15 @@ git remote -v
 
 ## How to ignore files with .gitignore
 [Atlassian tutorial on .gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
+
 ## How to ignore files that are already being tracked 
 (i.e. forgot to add them in the .gitignore and started tracking them)
 
 [How to ignore files which are in repository?](https://stackoverflow.com/questions/7231608/how-to-ignore-files-which-are-in-repository)
 
 [How to make Git "forget" about a file that was tracked but is now in .gitignore?](https://stackoverflow.com/questions/1274057/how-to-make-git-forget-about-a-file-that-was-tracked-but-is-now-in-gitignore)
+
+[How to stop tracking and ignore changes to a file in Git?](https://stackoverflow.com/questions/936249/how-to-stop-tracking-and-ignore-changes-to-a-file-in-git?rq=1)
 ## Create a new branch
 To create a new branch, first sync up to the master repo by running
 ```bash
