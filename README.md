@@ -71,14 +71,20 @@ We can now test changes on our local control branch. These changes should not be
 ## Tracking a Remote branch
 [How to track a remote branch](https://www.git-tower.com/learn/git/faq/track-remote-upstream-branch)
 
-
-## Delete a local branch
+## Delete branches
+### Delete a local branch
+To delete a local branch:
 ```bash
 git branch -d <branch>
 ```
 
-## Delete a remote branch
-[How can I delete a remote branch in Git?](https://www.git-tower.com/learn/git/faq/delete-remote-branch)
+To delete a local branch set up to track a remote branch:
+```bash
+git branch -d -r <branch>
+```
+
+### Delete a remote branch
+
 ```bash
 git push origin --delete <branch>
 ```
@@ -86,6 +92,22 @@ For example,
 ```bash
 git push origin --delete experiment-setup
 ```
+
+Note that this will only delete the remote branch. The remote branch is a separate entity that must be deleted following [these instructions](#delete-a-local-branch). e.g.
+
+```bash
+git branch -d -r <branch>
+```
+
+If you've deleted a remote branch in the central repo and would like to delete a remote branch locally without pushing, run the following
+
+```bash
+git fetch --all --prune
+```
+
+### Delete Branch Resources
+- [How can I delete a remote branch in Git?](https://www.git-tower.com/learn/git/faq/delete-remote-branch)
+- [How to fully delete ]
 
 ## Push changes from a new branch to the remote and create the branch on the remote
 Before doing this, we can push this branch to the remote origin/control using the following commands:
