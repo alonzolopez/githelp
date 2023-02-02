@@ -66,6 +66,13 @@ And checkout (work on) the branch using
 ```bash
 git checkout control
 ```
+
+OR, you can do this all in one line (but it's important to understand that this one line does the two steps above):
+
+```bash
+git checkout -b control
+```
+
 We can now test changes on our local control branch. These changes should not be pushed to the master repo until they are fully functioning and validated.
 
 ## Tracking a Remote branch
