@@ -1,4 +1,8 @@
 # Git and Proxy Helper Commands
+## Git Personal Access Tokens
+[Using personal access tokens with git and github](https://www.edgoad.com/2021/02/using-personal-access-tokens-with-git-and-github.html)
+
+Make sure to use the classic access tokens.
 ## Set wget proxy
 For all users of the system via the `/etc/wgetrc` or for the user only with the `~/.wgetrc` file:
 ```
